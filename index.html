@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Janes Financial Center — Chapman SMIF</title>
+<meta name="description" content="The Janes Financial Center is the institutional home of Chapman University's Student-Managed Investment Fund — a $5.5M live-capital portfolio managed by undergraduates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP RAIL -->
+<div class="rail">
+  <div class="rail-left">
+    <span><span class="rail-pulse"></span>MARKETS OPEN</span>
+    <span>Chapman University · Argyros College</span>
+  </div>
+  <div>Vol. XIV · Issue 02 · Spring 2026</div>
+</div>
+
+<!-- NAV (5 links: Hick's Law) -->
+<nav>
+  <div class="brand"><a href="index.html">Janes<sup>F·C</sup></a></div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="apply.html" class="nav-cta">Apply →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="annotation" style="top: 40px; right: 32px;" title="Hick–Hyman Law: reaction time scales with log of choices. 5 nav items keeps decisions fast.">Hick's Law · 5 nav items</span>
+
+  <div class="hero-grid">
+    <div>
+      <div class="hero-label">Student-Managed Investment Fund</div>
+      <h1>Real <em>capital.</em><br>Real <span class="underline">accountability.</span></h1>
+    </div>
+    <div class="hero-meta">
+      <strong>The Janes Financial Center</strong> is the institutional home of Chapman's Student-Managed Investment Fund — a live-capital portfolio stewarded by undergraduates, governed by an investment policy statement, and accountable to a board of practitioners.
+    </div>
+  </div>
+
+  <!-- Hero strip: Miller's Law (4 chunks) -->
+  <div class="hero-strip">
+    <span class="annotation" style="top: -14px; left: 32px;" title="Miller's Law: working memory holds ~4 chunks reliably. Four headline stats — no more — keep the dashboard scannable.">Miller's Law · 4 chunks</span>
+
+    <div class="strip-cell">
+      <div class="strip-num">$5.5<span class="small">M</span></div>
+      <div class="strip-label">Assets Under Management</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-num">14<span class="small">yrs</span></div>
+      <div class="strip-label">Continuous Operation</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-num">5</div>
+      <div class="strip-label">Sector & Macro Teams</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-num">100<span class="small">%</span></div>
+      <div class="strip-label">Placement to Industry</div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO FIGURE — SVG illustration with alt text -->
+<div class="hero-figure" style="padding-top: 80px;">
+  <div class="hero-image-wrap" role="img" aria-label="Schematic chart of the Janes fund's investment process: ideas flow left to right through screen, diligence, pitch, vote, and own stages, with a stylized portfolio composition wheel on the right.">
+    <svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- background grid -->
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1916" stroke-width="0.4" opacity="0.08"/>
+        </pattern>
+        <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1" fill="#1a1916" opacity="0.15"/>
+        </pattern>
+      </defs>
+      <rect width="1400" height="600" fill="#ebe5d9"/>
+      <rect width="1400" height="600" fill="url(#grid)"/>
+
+      <!-- LEFT SIDE: PROCESS FLOW -->
+      <text x="80" y="100" font-family="JetBrains Mono, monospace" font-size="11" fill="#a8281f" letter-spacing="1.5">◆ INVESTMENT PROCESS</text>
+
+      <!-- horizontal flow line -->
+      <line x1="100" y1="280" x2="780" y2="280" stroke="#1a1916" stroke-width="1.5"/>
+
+      <!-- 5 process nodes -->
+      <g font-family="Fraunces, serif" fill="#1a1916">
+        <!-- node 1 -->
+        <circle cx="130" cy="280" r="28" fill="#f4efe6" stroke="#1a1916" stroke-width="1.5"/>
+        <text x="130" y="285" text-anchor="middle" font-size="13" font-family="JetBrains Mono, monospace" fill="#1a1916">01</text>
+        <text x="130" y="345" text-anchor="middle" font-size="18" font-weight="500">Screen</text>
+
+        <!-- node 2 -->
+        <circle cx="290" cy="280" r="28" fill="#f4efe6" stroke="#1a1916" stroke-width="1.5"/>
+        <text x="290" y="285" text-anchor="middle" font-size="13" font-family="JetBrains Mono, monospace" fill="#1a1916">02</text>
+        <text x="290" y="345" text-anchor="middle" font-size="18" font-weight="500">Diligence</text>
+
+        <!-- node 3 -->
+        <circle cx="450" cy="280" r="34" fill="#a8281f" stroke="#a8281f" stroke-width="1.5"/>
+        <text x="450" y="286" text-anchor="middle" font-size="13" font-family="JetBrains Mono, monospace" fill="#f4efe6">03</text>
+        <text x="450" y="349" text-anchor="middle" font-size="18" font-weight="500">Pitch</text>
+
+        <!-- node 4 -->
+        <circle cx="610" cy="280" r="28" fill="#f4efe6" stroke="#1a1916" stroke-width="1.5"/>
+        <text x="610" y="285" text-anchor="middle" font-size="13" font-family="JetBrains Mono, monospace" fill="#1a1916">04</text>
+        <text x="610" y="345" text-anchor="middle" font-size="18" font-weight="500">Vote</text>
+
+        <!-- node 5 -->
+        <circle cx="770" cy="280" r="28" fill="#f4efe6" stroke="#1a1916" stroke-width="1.5"/>
+        <text x="770" y="285" text-anchor="middle" font-size="13" font-family="JetBrains Mono, monospace" fill="#1a1916">05</text>
+        <text x="770" y="345" text-anchor="middle" font-size="18" font-weight="500">Own</text>
+      </g>
+
+      <!-- italic supporting text -->
+      <text x="130" y="395" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#423f38">Universe →</text>
+      <text x="770" y="395" text-anchor="end" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#423f38">→ Portfolio</text>
+
+      <!-- decorative tick marks under the flow -->
+      <g stroke="#1a1916" stroke-width="0.8" opacity="0.4">
+        <line x1="100" y1="450" x2="100" y2="460"/>
+        <line x1="200" y1="450" x2="200" y2="455"/>
+        <line x1="300" y1="450" x2="300" y2="455"/>
+        <line x1="400" y1="450" x2="400" y2="455"/>
+        <line x1="500" y1="450" x2="500" y2="460"/>
+        <line x1="600" y1="450" x2="600" y2="455"/>
+        <line x1="700" y1="450" x2="700" y2="455"/>
+        <line x1="800" y1="450" x2="800" y2="455"/>
+        <line x1="100" y1="450" x2="800" y2="450"/>
+      </g>
+      <text x="100" y="478" font-family="JetBrains Mono, monospace" font-size="9" fill="#423f38" letter-spacing="0.5">UNIVERSE</text>
+      <text x="800" y="478" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="9" fill="#423f38" letter-spacing="0.5">CONVICTION</text>
+
+      <!-- divider -->
+      <line x1="920" y1="80" x2="920" y2="520" stroke="#1a1916" stroke-width="0.8" opacity="0.4"/>
+
+      <!-- RIGHT SIDE: portfolio composition wheel -->
+      <text x="970" y="100" font-family="JetBrains Mono, monospace" font-size="11" fill="#a8281f" letter-spacing="1.5">◆ PORTFOLIO COMPOSITION</text>
+
+      <!-- donut chart segments -->
+      <g transform="translate(1170, 290)">
+        <!-- Macro & Fixed Income -->
+        <path d="M 0,-130 A 130,130 0 0,1 123.7,-39.85 L 76.13,-24.53 A 80,80 0 0,0 0,-80 Z" fill="#a8281f"/>
+        <!-- Consumer & Healthcare -->
+        <path d="M 123.7,-39.85 A 130,130 0 0,1 76.45,105.21 L 47.05,64.74 A 80,80 0 0,0 76.13,-24.53 Z" fill="#1d4a4a"/>
+        <!-- Industrials & Energy -->
+        <path d="M 76.45,105.21 A 130,130 0 0,1 -76.45,105.21 L -47.05,64.74 A 80,80 0 0,0 47.05,64.74 Z" fill="#b08d2e"/>
+        <!-- Technology -->
+        <path d="M -76.45,105.21 A 130,130 0 0,1 -123.7,-39.85 L -76.13,-24.53 A 80,80 0 0,0 -47.05,64.74 Z" fill="#423f38"/>
+        <!-- Financials -->
+        <path d="M -123.7,-39.85 A 130,130 0 0,1 0,-130 L 0,-80 A 80,80 0 0,0 -76.13,-24.53 Z" fill="#d4a59a"/>
+
+        <!-- center label -->
+        <text text-anchor="middle" y="-4" font-family="Fraunces, serif" font-weight="500" font-size="22" fill="#1a1916">$5.5M</text>
+        <text text-anchor="middle" y="14" font-family="JetBrains Mono, monospace" font-size="9" fill="#423f38" letter-spacing="0.5">AUM</text>
+      </g>
+
+      <!-- legend -->
+      <g font-family="JetBrains Mono, monospace" font-size="10" fill="#1a1916">
+        <rect x="960" y="170" width="10" height="10" fill="#a8281f"/>
+        <text x="978" y="179">MACRO & FIXED INCOME</text>
+        <rect x="960" y="200" width="10" height="10" fill="#1d4a4a"/>
+        <text x="978" y="209">CONSUMER & HEALTHCARE</text>
+        <rect x="960" y="230" width="10" height="10" fill="#b08d2e"/>
+        <text x="978" y="239">INDUSTRIALS & ENERGY</text>
+        <rect x="960" y="260" width="10" height="10" fill="#423f38"/>
+        <text x="978" y="269">TECHNOLOGY</text>
+        <rect x="960" y="290" width="10" height="10" fill="#d4a59a"/>
+        <text x="978" y="299">FINANCIALS</text>
+      </g>
+
+      <!-- footer mono text -->
+      <text x="80" y="555" font-family="JetBrains Mono, monospace" font-size="10" fill="#423f38" letter-spacing="0.5">FIG. 01 — INVESTMENT WORKFLOW & PORTFOLIO STRUCTURE</text>
+      <text x="1320" y="555" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#423f38" letter-spacing="0.5">SOURCE: JANES FC · 2026</text>
+    </svg>
+  </div>
+  <div class="figure-caption">
+    <span>01 — Investment workflow & portfolio structure</span>
+    <span>Source: Janes FC · 2026</span>
+  </div>
+</div>
+
+<!-- PILLARS — Gestalt common region, Miller chunking -->
+<section id="pillars">
+  <div class="section-header">
+    <div class="section-num">01 — What we build</div>
+    <h2>Four pillars of the <em>analyst</em> experience.</h2>
+  </div>
+
+  <div class="pillars">
+    <span class="annotation" style="top: -14px; right: 0;" title="Gestalt: common region. A single bounding box plus uniform spacing tells the eye these four pillars are peers.">Gestalt · common region</span>
+
+    <div class="pillar">
+      <div class="pillar-num">i. Discipline</div>
+      <div class="pillar-title">Process before outcome</div>
+      <div class="pillar-body">Every position passes a written checklist: thesis, catalysts, valuation, risk, sizing. Outcomes vary; the process is the edge.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">ii. Capital</div>
+      <div class="pillar-title">Skin in the consequence</div>
+      <div class="pillar-body">Live AUM means losses are real and discussions are honest. There is no learning substitute for managing money.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">iii. Cohort</div>
+      <div class="pillar-title">Built across class years</div>
+      <div class="pillar-body">Sophomores shadow seniors. Knowledge transfer is structural — onboarding decks, recorded pitches, mentor pairings.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">iv. Network</div>
+      <div class="pillar-title">A board that opens doors</div>
+      <div class="pillar-body">Alumni at PIMCO, Capital Group, T. Rowe, MFS, Pacific Life. The Janes network is the placement engine.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAVIGATION (explicit forward link) -->
+<div class="page-nav">
+  <div class="page-nav-link disabled">
+    <div class="page-nav-label">← Previous</div>
+    <div class="page-nav-title">Start of site</div>
+  </div>
+  <a href="about.html" class="page-nav-link next">
+    <div class="page-nav-label">Next →</div>
+    <div class="page-nav-title">About the Fund</div>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-mark">Janes<sup style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 400; vertical-align: super; margin-left: 4px; color: var(--ink-soft);">F·C</sup></div>
+      <div class="footer-tag">The Janes Financial Center · Argyros College of Business and Economics · Chapman University</div>
+    </div>
+    <div class="footer-col">
+      <h4>The Fund</h4>
+      <a href="about.html">About</a>
+      <a href="process.html">Process</a>
+      <a href="team.html">Team</a>
+    </div>
+    <div class="footer-col">
+      <h4>Engage</h4>
+      <a href="apply.html">Apply</a>
+      <a href="apply.html">Info Sessions</a>
+      <a href="team.html">Alumni Board</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <a href="#">Beckman Hall</a>
+      <a href="#">One University Drive</a>
+      <a href="#">Orange, CA</a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div>© 2026 Chapman University · Built for CPSC 349</div>
+    <div>Designed in California</div>
+  </div>
+</footer>
+
+</body>
+</html>

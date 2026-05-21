@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apply — Janes Financial Center</title>
+<meta name="description" content="Apply to the Janes Financial Center's 2026 analyst cohort.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="rail">
+  <div class="rail-left">
+    <span><span class="rail-pulse"></span>MARKETS OPEN</span>
+    <span>Chapman University · Argyros College</span>
+  </div>
+  <div>Vol. XIV · Issue 02 · Spring 2026</div>
+</div>
+
+<nav>
+  <div class="brand"><a href="index.html">Janes<sup>F·C</sup></a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="apply.html" class="nav-cta active">Apply →</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span class="breadcrumb-current">Apply</span>
+</div>
+
+<header class="page-title">
+  <div class="hero-label">Section 04 · Recruitment</div>
+  <h1>The application<br><em>window</em> is open.</h1>
+  <p class="lede">We recruit sophomores and juniors with demonstrated curiosity, work ethic, and a willingness to be wrong out loud. Finance background not required; the willingness to do the reading is.</p>
+</header>
+
+<!-- APPLICATION FORM -->
+<section>
+  <div class="section-header">
+    <div class="section-num">01 — Application</div>
+    <h2>Tell us <em>who</em> you are.</h2>
+  </div>
+
+  <div class="form-wrap">
+    <div class="form-side">
+      <h3>What we're looking for.</h3>
+      <p>
+        Curiosity over credentials. A pitch can be taught. The instinct to ask "wait, why?" cannot.
+      </p>
+      <p style="margin-top: 20px;">
+        Application takes about <strong>15 minutes</strong>. We respond within two weeks. Selected candidates are invited to a 30-minute interview with current PMs.
+      </p>
+      <p style="margin-top: 20px;">
+        Have questions before applying? RSVP to an info session — coffee with the PMs, every other Tuesday at 6pm in Beckman Hall.
+      </p>
+    </div>
+
+    <!-- Form: Nielsen #5 error prevention via clear labels + #1 status via focus states -->
+    <form class="form-grid" onsubmit="event.preventDefault(); document.getElementById('form-status').style.display='block'; this.style.opacity='0.5';">
+      <span class="annotation" style="top: -14px; right: 0;" title="Nielsen #5: Error prevention. Required-field markers, sensible labels, and inline hints prevent errors before submission.">Nielsen #5 · prevention</span>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="first">First name<span class="req">*</span></label>
+          <input type="text" id="first" name="first" required>
+        </div>
+        <div class="field">
+          <label for="last">Last name<span class="req">*</span></label>
+          <input type="text" id="last" name="last" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Chapman email<span class="req">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="lastname@chapman.edu">
+        </div>
+        <div class="field">
+          <label for="year">Class year<span class="req">*</span></label>
+          <select id="year" name="year" required>
+            <option value="">Select…</option>
+            <option>Freshman</option>
+            <option>Sophomore</option>
+            <option>Junior</option>
+            <option>Senior</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="major">Major</label>
+          <input type="text" id="major" name="major" placeholder="e.g. Economics, Finance, CS">
+        </div>
+        <div class="field">
+          <label for="pod">Pod interest</label>
+          <select id="pod" name="pod">
+            <option value="">No preference</option>
+            <option>Macro & Fixed Income</option>
+            <option>Consumer & Healthcare</option>
+            <option>Industrials & Energy</option>
+            <option>Technology</option>
+            <option>Financials</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="why">Why Janes?<span class="req">*</span></label>
+        <textarea id="why" name="why" required placeholder="A paragraph is fine. We care more about how you think than how long you write."></textarea>
+        <span class="hint">200–400 words is the sweet spot.</span>
+      </div>
+
+      <div class="field">
+        <label for="pitch">If you had $5M to invest tomorrow, what's one position you'd pitch?</label>
+        <textarea id="pitch" name="pitch" placeholder="Ticker, thesis, and one risk. No finance background required — we want to see your reasoning."></textarea>
+        <span class="hint">Optional. Bonus points for picking something we don't already own.</span>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="button button-dark">Submit Application →</button>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase;">15 min · 8 fields</span>
+      </div>
+
+      <!-- Nielsen #1: visibility of system status — submission feedback -->
+      <div id="form-status" style="display: none; padding: 20px; border: 1px solid var(--accent); background: var(--paper-dim); margin-top: 8px;">
+        <strong style="font-family: 'Fraunces', serif; font-size: 18px; color: var(--accent);">✓ Application received.</strong>
+        <p style="font-size: 14px; margin-top: 8px; color: var(--ink-soft);">We'll respond within two weeks. Check your Chapman email.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- DESIGN NOTES APPENDIX — the CPSC 349 catalog (kept on the last page for self-contained reference) -->
+<section class="design-notes" style="max-width: none; padding: 80px 32px;">
+  <div class="design-inner">
+    <div class="section-header">
+      <div class="section-num">Appendix — Design Notes</div>
+      <h2>This site, <em>annotated.</em></h2>
+    </div>
+
+    <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; max-width: 680px; color: var(--accent-soft); line-height: 1.55;">
+      Every layout choice in this site maps to a CPSC 349 principle. Hover the orange ◆ tags scattered across the pages for in-context explanations, or read the full catalog below.
+    </p>
+
+    <div class="principle-grid">
+      <div class="principle">
+        <div class="principle-tag">Heuristic 01 · Nielsen</div>
+        <div class="principle-name">Visibility of System Status</div>
+        <div class="principle-where">Where: rail pulse, hover states, form focus, breadcrumb.</div>
+        <div class="principle-desc">The pulsing "Markets Open" indicator, every hover, and the active-page highlight in the nav all keep the user oriented at all times.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Heuristic 03 · Nielsen</div>
+        <div class="principle-name">User Control & Freedom</div>
+        <div class="principle-where">Where: breadcrumbs, prev/next page nav, multi-route navigation.</div>
+        <div class="principle-desc">Every page has a breadcrumb back to Home plus explicit Previous/Next links at the bottom. The user is never stuck.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Heuristic 04 · Nielsen</div>
+        <div class="principle-name">Consistency & Standards</div>
+        <div class="principle-where">Where: shared stylesheet, repeated section headers, identical nav.</div>
+        <div class="principle-desc">A single styles.css drives all 5 pages. Every page follows "§ number — title" headers and the same monospace label conventions.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Heuristic 05 · Nielsen</div>
+        <div class="principle-name">Error Prevention</div>
+        <div class="principle-where">Where: application form.</div>
+        <div class="principle-desc">Required fields marked with an accent asterisk, inline hints below ambiguous fields, sensible input types (email, select). Errors prevented before they occur.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Heuristic 06 · Nielsen</div>
+        <div class="principle-name">Recognition over Recall</div>
+        <div class="principle-where">Where: nav with labels, form select dropdowns, breadcrumbs.</div>
+        <div class="principle-desc">Users see options rather than having to remember them. Dropdowns list pod choices; nav is always visible; breadcrumbs show the path.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Heuristic 08 · Nielsen</div>
+        <div class="principle-name">Aesthetic & Minimalist Design</div>
+        <div class="principle-where">Where: ruthless palette, two type families.</div>
+        <div class="principle-desc">Two type families, four colors, one button style. Every extra element competes for attention with the content that matters.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Cognitive · Miller</div>
+        <div class="principle-name">Miller's Law (7 ± 2)</div>
+        <div class="principle-where">Where: hero stat strip, nav, pillars.</div>
+        <div class="principle-desc">Headline stats capped at 4, pillars at 4, nav at 5. Each grouping sits comfortably below the working-memory ceiling.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Cognitive · Hick–Hyman</div>
+        <div class="principle-name">Hick's Law</div>
+        <div class="principle-where">Where: navigation, CTAs.</div>
+        <div class="principle-desc">Reaction time grows with the log of choices. A 5-item nav lets a visitor decide where to go in under a second.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Motor · Fitts</div>
+        <div class="principle-name">Fitts's Law</div>
+        <div class="principle-where">Where: nav links, buttons, coverage cells, page-nav blocks.</div>
+        <div class="principle-desc">Click targets are oversized — nav has 12px vertical padding, buttons are 14×28px, page-nav blocks span half-page width. Targets are large and near where eyes land.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Perception · Gestalt</div>
+        <div class="principle-name">Proximity & Common Region</div>
+        <div class="principle-where">Where: pillars block, coverage grid, footer.</div>
+        <div class="principle-desc">Elements that belong together are physically grouped and share a bounding rule. The eye reads structure before it reads words.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Perception · Gestalt</div>
+        <div class="principle-name">Similarity</div>
+        <div class="principle-where">Where: team cards, process dots, pod tags.</div>
+        <div class="principle-desc">Visual sameness signals categorical sameness. Three identical cards = three peers. A row of identical dots = a sequence.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-tag">Norman · Affordances</div>
+        <div class="principle-name">Signifiers & Feedback</div>
+        <div class="principle-where">Where: button shadows, card lifts, cursor changes, focus rings.</div>
+        <div class="principle-desc">Every interactive element looks interactive. Every action returns visual feedback within 100ms (hover lift, color change, focus ring).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAVIGATION -->
+<div class="page-nav">
+  <a href="process.html" class="page-nav-link">
+    <div class="page-nav-label">← Previous</div>
+    <div class="page-nav-title">Investment Process</div>
+  </a>
+  <a href="index.html" class="page-nav-link next">
+    <div class="page-nav-label">↑ Back to top</div>
+    <div class="page-nav-title">Return Home</div>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-mark">Janes<sup style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 400; vertical-align: super; margin-left: 4px; color: var(--ink-soft);">F·C</sup></div>
+      <div class="footer-tag">The Janes Financial Center · Argyros College of Business and Economics · Chapman University</div>
+    </div>
+    <div class="footer-col">
+      <h4>The Fund</h4>
+      <a href="about.html">About</a>
+      <a href="process.html">Process</a>
+      <a href="team.html">Team</a>
+    </div>
+    <div class="footer-col">
+      <h4>Engage</h4>
+      <a href="apply.html">Apply</a>
+      <a href="apply.html">Info Sessions</a>
+      <a href="team.html">Alumni Board</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <a href="#">Beckman Hall</a>
+      <a href="#">One University Drive</a>
+      <a href="#">Orange, CA</a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div>© 2026 Chapman University · Built for CPSC 349</div>
+    <div>Designed in California</div>
+  </div>
+</footer>
+
+</body>
+</html>
